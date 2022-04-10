@@ -1,9 +1,17 @@
+@import "~antd/dist/antd.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+div,
 html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+html body {
+  background-image: url(../public/Background.jpg);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+Footer {
+  background-color: #3e3e3e;
+  margin-top: 40px;
 }
 
 a {
@@ -14,3 +22,386 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* Navbar */
+.ant-layout-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.ant-btn-lg > span {
+  font-family: "Roboto";
+}
+
+.ant-btn-lg:hover {
+  color: rgb(196, 11, 144);
+}
+
+.header {
+  position: sticky;
+  padding-top: 1vh;
+  justify-content: space-between;
+}
+
+
+#logo {
+  color: rgb(196, 11, 144);
+  margin-top: -0.3vh;
+}
+
+#logo .ant-anchor-link {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(196, 11, 144);
+  margin-right: 30px;
+  margin-top: auto;
+}
+
+#logo a:hover {
+  color: rgb(196, 11, 144);
+}
+
+#logo .ant-anchor-link:before,
+#logo .ant-anchor-link:after {
+  opacity: 0%;
+}
+
+#logo .ant-anchor-link-active > .ant-anchor-link-title {
+  color:rgb(196, 11, 144);
+}
+
+.header .ant-anchor-wrapper {
+  overflow: auto;
+  margin-right: 0px;
+  padding-right: 200vh;
+  width: 1vh;
+}
+
+.header .ant-anchor {
+  position: relative;
+  display: flex;
+  font-family: "Roboto";
+  font-size: 18px;
+}
+
+.header .ant-anchor-ink {
+  display: none;
+}
+
+.header .ant-anchor-link {
+  padding: 9px 20px;
+  line-height: 1.4;
+  position: relative;
+}
+
+.header .ant-anchor-link-active > .ant-anchor-link-title {
+  color: rgb(196, 11, 144);
+  font-weight: bold;
+}
+
+.header .ant-anchor-link-title:hover {
+  color: rgb(196, 11, 144);
+  font-weight: bold;
+  opacity: 60%;
+}
+
+.header .ant-anchor-link:before {
+  opacity: 50%;
+}
+
+.header .ant-anchor-link:before,
+.header .ant-anchor-link:after {
+  content: "";
+  width: 2px;
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  left: 30%;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.header .ant-anchor-link:after {
+  left: auto;
+  right: 30%;
+}
+
+.header .ant-anchor-link.ant-anchor-link-active:before,
+.header .ant-anchor-link:hover:before {
+  left: 5%;
+  opacity: 1;
+}
+
+.header .ant-anchor-link.ant-anchor-link-active:after,
+.header .ant-anchor-link:hover:after {
+  right: 5%;
+  opacity: 1;
+}
+
+/* Homepage */
+
+#base,
+#about,
+#members {
+  height: 100vh;
+}
+
+#desc {
+  font-size: 25px;
+  color: #b2b2b2;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1.5vh;
+  padding-bottom: 1vh;
+  width: 60vh;
+}
+
+#Title {
+  color: rgb(196, 11, 144);
+  font-family: "Roboto";
+  font-size: 70px;
+  text-align: center;
+  padding-top: 10vh;
+}
+
+/* About Page */
+#about #ant-row {
+  height: 100vh;
+  margin-top: auto;
+  display: block;
+}
+
+#about .ant-col-12 {
+  margin-top: 5%;
+}
+
+#about h1 {
+  color: rgb(196, 11, 144);
+  font-family: "Roboto";
+  font-size: 5vh;
+  text-align: left;
+  margin-left: 25%;
+}
+
+#about p {
+  color: rgb(196, 11, 144);
+  font-family: "Roboto";
+  font-size: 2.5vh;
+  text-align: left;
+  width: 60vh;
+  margin-left: 25%;
+}
+
+#about #button-left {
+  margin-top: 3vh;
+  text-align: left;
+  margin-left: 15%;
+}
+#about #button-right {
+  margin-top: 3vh;
+  text-align: right;
+  margin-left: 25%;
+  
+}
+
+/* Landing Page (base) */
+
+#base h1{
+  margin-top: 500px;
+}
+
+/* Button */
+
+#base #button-left {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1vh;
+  text-align: center;
+  position: absolute;
+  left: 40%;
+  top: 20%;
+  width: 200px;
+  height: 60px;
+}
+#base #button-right {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1vh;
+  text-align: center;
+  position: absolute;
+  left: 60%;
+  top: 20%;
+  width: 200px;
+  height: 60px;
+}
+
+a.ant-btn {
+  color: rgb(0, 0, 0);
+  background: rgb(196, 11, 144);
+  border-color: rgb(8, 8, 8);
+  border-radius: 5px;
+  width: 20vh;
+  height: 5vh;
+  text-align: center;
+}
+
+a.ant-btn:hover {
+  background: rgb(29, 11, 196);
+  border-color: rgb(70, 12, 168);
+  border-radius: 5px;
+}
+
+.ant-btn-lg > span {
+  padding-top: 0.8vh;
+  font-size: 1.5vh;
+  text-align: center;
+}
+
+/* Carousel */
+
+div .ant-carousel {
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#carousel-container {
+  height: 60vh;
+}
+
+#carousel-container h1 {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 3vh;
+  margin-bottom: -1vh;
+}
+
+#carousel-container h2 {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 2.8vh;
+  margin-bottom: 0vh;
+}
+
+#carousel-container div {
+  background-color: black;
+}
+
+#carousel-container h3 {
+  display: block;
+  margin: auto;
+  width: 30vh;
+}
+
+#carousel-container img {
+  border-radius: 34px;
+}
+
+#carousel-container p {
+  margin: auto;
+  text-align: center;
+  font-family: "roboto";
+  font-size: 1.6vh;
+  width: 60vh;
+}
+
+/* Carousel Buttons */
+
+#members .ant-carousel .slick-dots li button {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background: rgb(196, 11, 144);;
+}
+
+#members .ant-carousel .slick-dots li.slick-active button {
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  background: rgb(196, 11, 144);;
+}
+
+/* Login and registration */
+
+#login,
+#registration,
+#form {
+  height: 100vh;
+}
+
+#registration h1,
+#login h1 {
+  font-family: "roboto";
+  color: rgb(196, 11, 144);
+  font-size: 4vh;
+  text-align: center;
+  padding-top: 30vh;
+}
+
+
+#form .ant-btn-primary,
+#form .ant-btn-primary:focus,
+#form .ant-btn-primary  {
+   background-color: rgb(196, 11, 144);;
+   border-color: rgb(196, 11, 144);;
+   border-radius: .9vh;
+   height: auto;
+   width: 32.5vh;
+ }
+
+ #form .ant-btn-primary:hover{
+   border-color: rgb(196, 11, 144);
+ }
+.ant-form-item-control-input-content{
+  text-align: center;
+}
+#form .ant-checkbox-inner {
+  border-color:rgb(196, 11, 144);
+}
+
+
+#form .ant-checkbox-checked::after,
+#form .ant-checkbox-checked .ant-checkbox-inner{
+  border-color: rgb(196, 11, 168);
+  background-color: rgb(11, 17, 196);
+}
+#form {
+  color: rgb(196, 11, 144);;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#form p{
+  color: black;
+  font-family: "roboto";
+  font-size: 1.25vh;
+  padding-top: 1vh;
+  opacity: 50%;
+  text-align: center;
+}
+
+#form a {
+  color: rgb(196, 11, 144);;
+}
+
+#form .ant-form .ant-form-horizontal .form {
+  vertical-align: middle;
+  margin-top: 50%;
+}
+
+#form .ant-input,
+#form .ant-input-affix-wrapper,
+#register .ant-input,
+#register .ant-input-affix-wrapper {
+  width: 32.5vh;
+}
+
+#form .placeholder{
+  color:rgb(196, 11, 144);
+  opacity: 100%;
+}
+
