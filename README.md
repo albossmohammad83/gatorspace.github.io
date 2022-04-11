@@ -7,7 +7,7 @@
 | Kimberly  Elgar      | kelgar@mail.sfsu.edu       |     kimela24     |
 | Seongjung Kim        | skim53@sfsu.edu            | seongjungkim1007 |
 | Daisy Rodriguez      | drodri18@mail.sfsu.edu     |                  |
-| Chi Tran             | ttranpham@mail.sfsu.edu    |                  |
+| Chi Tran             | ttranpham@mail.sfsu.edu    |    chimusubi     |
 | Mohammad Abdelrahman | mabdelrahman@mail.sfsu.edu | albossmohammad83 |
 
 
