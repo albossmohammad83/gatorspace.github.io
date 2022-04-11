@@ -1,6 +1,6 @@
 # CSC 642 final project
 
-## Fill out the table below
+## Meet The Team!
 
 | Student Name         | Student Email              | GitHub Username  |
 |    :---:             |     :---:                  |     :---:        |
