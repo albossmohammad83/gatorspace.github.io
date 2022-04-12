@@ -1,6 +1,7 @@
 import PageHeader from "../components/header";
 import PageFooter from "../components/footer";
 import Landing from "../components/landing";
+import HomePage from "../components/homePage";
 
 import React from "react";
 
@@ -18,6 +19,7 @@ export default function Home() {
   return (
     <div>
       <PageHeader isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
+      <HomePage   isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
       <Landing />
       <PageFooter />
     </div>
