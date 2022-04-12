@@ -11,6 +11,14 @@ const bios = [
       "I'm a computer science undergraduate student passionate about software development. " +
       "Currently seeking an internship opportunity to further develop my skills and add value to the team.",
   },
+  {
+    key: "kimberly",
+    memberName: "Kimberly Elgar",
+    memberBio:
+      "I'm a computer science undergraduate student passionate about software development. " +
+      "Currently seeking an internship opportunity to further develop my skills and add value to the team.",
+  },
+
 ];
 
 export default function MembersPage() {
