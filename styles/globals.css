@@ -1,16 +1,69 @@
 @import "~antd/dist/antd.css";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+
 div,
 html,
 html body {
-  background-image: url(../public/Background.jpg);
+  /* background-image: url("../public/Background.jpg"); */
   margin-left: auto;
   margin-right: auto;
 }
 
+div.buttons-container {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  width: 21%;
+  height: 31%;
+}
+
+div.buttons-container-profile {
+  position: absolute;
+  top: 62%;
+  left: 43%;
+  width: 50%;
+  height: 20%;
+  padding: 1ch;
+}
+
+
 Footer {
-  background-color: #3e3e3e;
   margin-top: 40px;
 }
 
@@ -24,66 +77,28 @@ a {
 }
 
 /* Navbar */
-.ant-layout-header {
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: 999;
-}
-
-.ant-btn-lg > span {
-  font-family: "Roboto";
-}
-
-.ant-btn-lg:hover {
-  color: rgb(196, 11, 144);
-}
-
-.header {
-  position: sticky;
-  padding-top: 1vh;
-  justify-content: space-between;
-}
-
-
-#logo {
-  color: rgb(196, 11, 144);
-  margin-top: -0.3vh;
-}
 
 #logo .ant-anchor-link {
   font-size: 24px;
-  font-weight: bold;
   color: rgb(196, 11, 144);
   margin-right: 30px;
   margin-top: auto;
 }
 
-#logo a:hover {
-  color: rgb(196, 11, 144);
-}
-
-#logo .ant-anchor-link:before,
-#logo .ant-anchor-link:after {
-  opacity: 0%;
-}
-
-#logo .ant-anchor-link-active > .ant-anchor-link-title {
-  color:rgb(196, 11, 144);
+#logo .ant-anchor-link:hover {
+  font-weight: bold
 }
 
 .header .ant-anchor-wrapper {
   overflow: auto;
-  margin-right: 0px;
-  padding-right: 200vh;
-  width: 1vh;
+  padding-right: 50vh;
 }
 
 .header .ant-anchor {
   position: relative;
   display: flex;
-  font-family: "Roboto";
-  font-size: 18px;
+  font-family: inherit;
+  font-size: 20px;
 }
 
 .header .ant-anchor-ink {
@@ -91,53 +106,15 @@ a {
 }
 
 .header .ant-anchor-link {
-  padding: 9px 20px;
-  line-height: 1.4;
+  padding: 9px 30px;
+  line-height: 2.4;
   position: relative;
-}
-
-.header .ant-anchor-link-active > .ant-anchor-link-title {
-  color: rgb(196, 11, 144);
-  font-weight: bold;
 }
 
 .header .ant-anchor-link-title:hover {
   color: rgb(196, 11, 144);
   font-weight: bold;
-  opacity: 60%;
-}
-
-.header .ant-anchor-link:before {
-  opacity: 50%;
-}
-
-.header .ant-anchor-link:before,
-.header .ant-anchor-link:after {
-  content: "";
-  width: 2px;
-  position: absolute;
-  top: 2px;
-  bottom: 2px;
-  left: 30%;
-  opacity: 0;
-  transition: all 0.2s linear;
-}
-
-.header .ant-anchor-link:after {
-  left: auto;
-  right: 30%;
-}
-
-.header .ant-anchor-link.ant-anchor-link-active:before,
-.header .ant-anchor-link:hover:before {
-  left: 5%;
-  opacity: 1;
-}
-
-.header .ant-anchor-link.ant-anchor-link-active:after,
-.header .ant-anchor-link:hover:after {
-  right: 5%;
-  opacity: 1;
+  opacity: 100%;
 }
 
 /* Homepage */
@@ -150,7 +127,6 @@ a {
 
 #desc {
   font-size: 25px;
-  color: #b2b2b2;
   text-align: center;
   margin-left: auto;
   margin-right: auto;

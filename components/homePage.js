@@ -1,13 +1,5 @@
 import { Button } from "antd";
 import React from "react";
-import { Anchor, Layout } from "antd";
-
-function loggingOut() {
-    if (localStorage.getItem('user')) {
-        localStorage.removeItem('user');
-    }
-    sessionStorage.removeItem('user');
-}
 
 function LoginLogout({ props }) {
     if (props.sStorage || props.lStorage) {
@@ -55,30 +47,37 @@ function LoginLogout({ props }) {
 }
 export default function homePage({ isLoggedIn }) {
     return (
-        <div id="buttons">
-            <div id="button-friend">
-                <LoginLogout props={isLoggedIn} />
-                <br />
-            </div>
-            <div id="button-event">
+        <div>
+            <div class="buttons-container">
+                <div id="buttons">
+                    <div id="button-friend">
+                        <LoginLogout props={isLoggedIn} />
+                        <br />
+                    </div>
+                    <div id="button-event">
 
-                <br />
-            </div>
-            <div id="button-create-event">
+                        <br />
+                    </div>
+                    <div id="button-create-event">
 
-                <br />
-            </div>
-            <div id="button-study">
+                        <br />
+                    </div>
+                    <div id="button-study">
 
-                <br />
-            </div>
-            <div id="button-change-profile">
+                        <br />
+                    </div>
+                    <div id="button-change-profile">
 
-                <br />
-            </div>
-            <div id="button-help">
+                        <br />
+                    </div>
+                    <div id="button-help">
 
-                <br />
+                        <br />
+                    </div>
+                </div>
+            </div>
+            <div class="content-container">
+
             </div>
         </div>
     );

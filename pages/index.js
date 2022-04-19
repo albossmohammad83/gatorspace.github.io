@@ -3,6 +3,7 @@ import PageFooter from "../components/footer";
 import Landing from "../components/landing";
 import HomePage from "../components/homePage";
 
+
 import React from "react";
 
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
     <div>
       <PageHeader isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
       <HomePage   isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
-      <Landing />
+      <Landing    isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
       <PageFooter />
     </div>
   );

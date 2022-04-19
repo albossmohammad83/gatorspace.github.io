@@ -14,9 +14,18 @@ function loggingOut() {
 function LoginLogout({ props }) {
   if (props.sStorage || props.lStorage) {
     return (
+      <>
+      <div>
       <Anchor onClick={loggingOut}>
         <Link href='/' title="Logout" />
       </Anchor>
+      </div>
+      <div>
+         <Anchor >
+      <Link href="/profile" title="profile" />
+      </Anchor>
+      </div>
+      </>
     );
   }
 
@@ -25,7 +34,7 @@ function LoginLogout({ props }) {
 
 export default function PageHeader({ isLoggedIn }) {
   return (
-    <Header style={{ backgroundColor: "#DADADA" }}>
+    <Header style={{ backgroundColor: "white" }}>
       <div className="header">
         <Anchor targetOffset="65">
           <div id="logo">
