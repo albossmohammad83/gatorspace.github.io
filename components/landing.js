@@ -4,7 +4,7 @@ import React from "react";
 function LoginLogout({ props }) {
   if (!props.sStorage && !props.lStorage) {
     return (
-      <div id="base">
+      <div id="base" className={"flex-box"}>
       <div id="button-left">
         <Button size={"large"} href="/login">
           Sign in

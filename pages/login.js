@@ -3,6 +3,7 @@ import React from "react";
 import { Form, Input, Button, Checkbox } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import PageHeader from "../components/header";
+import PageFooter from "../components/footer";
 
 
 export default function Login() {
@@ -120,6 +121,7 @@ export default function Login() {
           </Form.Item>
         </Form>
       </div>
+      <PageFooter />
     </>
   );
 }
