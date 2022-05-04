@@ -18,6 +18,13 @@ const bios = [
       "I'm a computer science undergraduate student passionate about software development. " +
       "Currently seeking an internship opportunity to further develop my skills and add value to the team.",
   },
+  {
+    key: "SJ",
+    memberName: "SJ KIM",
+    memberBio:
+      "I'm majoing in computer science at SFSU and " +
+      "this is my first time to work with others.",
+  },
 
 ];
 

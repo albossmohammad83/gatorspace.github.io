@@ -34,7 +34,7 @@ function LoginLogout({ props }) {
 
 export default function PageHeader({ isLoggedIn }) {
   return (
-    <Header style={{ backgroundColor: "white" }}>
+    <Header style={{ backgroundColor: "violet" }}>
       <div className="header">
         <Anchor targetOffset="65">
           <div id="logo">

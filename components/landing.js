@@ -26,7 +26,7 @@ export default function Landing({ isLoggedIn }) {
   return (
     <div id="base">
     <div id="Title">Gator space</div>
-    <LoginLogout props={isLoggedIn} />
+    {/* <LoginLogout props={isLoggedIn} /> */}
     </div>
   );
 }
