@@ -14,7 +14,7 @@
 
 ## Please do the following steps to run Gator Space app.
 1. npm install
-2. npm run dev
+2. npm run dev (development mode to see active changes) or npm start (presentation stage)
 3. go to http://localhost:3000/
 
  

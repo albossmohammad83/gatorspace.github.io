@@ -34,7 +34,7 @@ export default function MembersPage() {
       <PageHeader isLoggedIn={{sStorage: null, lStorage: null}} />
     <div id="members">
       <div id="Title">Meet the Team!</div>
-      <Carousel autoplay autoplaySpeed={10000} style={{ display: "block" }}>
+      <Carousel autoplay autoplaySpeed={8000} style={{ display: "block" }}>
         {bios.map((bios) => {
           return (
             <div id="carousel-container" key={bios.key}>

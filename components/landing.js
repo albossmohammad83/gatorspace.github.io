@@ -1,20 +1,32 @@
 import { Button } from "antd";
-export default function Landing() {
-  return (
-    <div id="base">
-      <div id="Title">Gator space</div>
+import React from "react";
+
+function LoginLogout({ props }) {
+  if (!props.sStorage && !props.lStorage) {
+    return (
+      <div id="base">
       <div id="button-left">
         <Button size={"large"} href="/login">
-          Log in
+          Sign in
         </Button>
-        <br/>
+        <br />
       </div>
       <div id="button-right">
         <Button size={"large"} href="/registration">
           Sign up
         </Button>
-        <br/>
+        <br />
       </div>
+    </div>
+    );
+  }
+}
+
+export default function Landing({ isLoggedIn }) {
+  return (
+    <div id="base">
+    <div id="Title">Gator space</div>
+    <LoginLogout props={isLoggedIn} />
     </div>
   );
 }
