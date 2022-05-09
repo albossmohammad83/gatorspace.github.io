@@ -49,8 +49,8 @@ html body {
 
 div.buttons-container {
   position: absolute;
-  top: 35%;
-  left: 10%;
+  top: 55%;
+  left: 1%;
   width: 21%;
   height: 31%;
 }
@@ -226,28 +226,36 @@ Footer {
 
 
 /* Button */
+#buttons-container{
 
+   position: absolute;
+   max-width: 800px;
+   min-width: 800px;
+   margin-left:1600px;
+   bottom: -100px;
+}
 #button-left {
   /*margin-left: auto;*/
   /*margin-right: auto;*/
   /*padding-top: 1vh;*/
   /*text-align: center;*/
-  position: relative;
+  
+  /* position: relative; */
   /*left: 40%;*/
   /*top: 20%;*/
-  width: 300px;
-  height: 80px;
+  width: 100px;
+  font-size: 10px;
 }
 #button-right {
-  /*margin-left: auto;*/
-  /*margin-right: auto;*/
+
+  /*margin-right: auto;
   /*padding-top: 1vh;*/
-  text-align: center;
+  /* text-align: center; */
   position: relative;
   /*left: 60%;*/
   /*top: 20%;*/
-  width: 300px;
-  height: 80px;font-size: 30px;
+  width: 100px;
+  font-size: 30px;
 
 }
 
@@ -444,4 +452,80 @@ div.content-container {
   height: 510px;
   max-width: 700px;
   min-width: 700px;
+}
+
+div#addFreind-content{
+  left: 40%;
+  border: greenyellow solid 5px;
+  margin-left: 20%;
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: left;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: left;
+  padding: 1px;
+  margin-top: -38px;
+  margin-left: 200px;
+  size: 40%;
+  background: rgb(240, 8, 193);
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 50%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
 }
