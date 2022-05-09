@@ -8,7 +8,11 @@ function LoginLogout({ props }) {
             <div id="buttons">
                 <div id="button-friend">
                     <Button size={"large"}  href="/addFriends">
+<<<<<<< HEAD
                     Friend suggestion
+=======
+                        Friends
+>>>>>>> 845fa2a203d1e378e7a4530b2fc03c81777b679b
                     </Button>
                     <br />
                 </div>

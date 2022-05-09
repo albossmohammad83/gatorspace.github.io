@@ -1,10 +1,44 @@
 import Link from "next/link";
 import React, {useEffect} from "react";
-
+import { Carousel } from "antd";
 import PageHeader from "../components/header";
 import PageFooter from "../components/footer";
 import Landing from "../components/landing";
 import HomePage from "../components/homePage";
+import Image from "next/image";
+const bios = [
+  {
+    key: "mohammad",
+    memberName: "Mohammad Abdelrahman",
+    memberBio:
+      "Project leader",
+      contactinfo: "mohammad333@gmail.com"
+    },
+  {
+    key: "kimberly",
+    memberName: "Kimberly Elgar",
+    memberBio:
+     "Front-end",
+      contactinfo: "kimberly4002@gmail.com",
+    },
+  {
+
+    key: "SJ",
+    memberName: "SJ KIM",
+    memberBio:
+    "Back-end + github master",
+      contactinfo: "sjk40@gmail.com",
+  },
+  {
+    key: "daisy",
+    memberName: "Daisy Rodriguez",
+    memberBio:
+      "Back-end + scrum master",
+      contactinfo: "daisy43@gmail.com",
+    }
+
+];
+
 
 export default function Help(){
     const [sStorage, setSStorage] = React.useState(null);
@@ -36,7 +70,33 @@ return(
     </form>
   </div>
 </div>
+<>
+      
+    <div id="members">
+      <Carousel autoplay autoplaySpeed={8000} style={{ display: "block" }}>
+        {bios.map((bios) => {
+          return (
+            <div id="carousel-container" key={bios.key}>
+              
+              <h1> Name:   {bios.memberName}</h1>
+              <h3>
+                <Image
+                  src={`/team/${bios.key}.jpg`}
+                  alt="member-pictures"
+                  width="400%"
+                  height="400%"
+                />
+              </h3>
+              <p>{bios.memberBio}</p>
 
+              <h2 style={{fontWeight: "bold",}}>Contact info:</h2>
+              <h1>{bios.contactinfo}</h1>
+            </div>
+          );
+        })}
+      </Carousel>
+    </div>
+    </>
 
     </div>
 </div>);

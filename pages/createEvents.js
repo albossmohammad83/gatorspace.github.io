@@ -1,10 +1,9 @@
-
 import React, {useEffect} from "react";
 import PageHeader from "../components/header";
 import Landing from "../components/landing";
 import HomePage from "../components/homePage";
 
-export default function createEvents(){
+export default function CreateEvents(){
     const [sStorage, setSStorage] = React.useState(null);
     const [lStorage, setLStorage] = React.useState(null);
     React.useEffect(() => {
@@ -24,8 +23,6 @@ return(
 
         <div id="addFreind-content">
 
-
-
         <div class="topnav">
   <div class="search-container">
     <form action="/action_page.php">
@@ -35,5 +32,8 @@ return(
   </div>
 </div>
     </div>
-</div>);
+</div>
+
+
+);
 }
