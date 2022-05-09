@@ -1,9 +1,6 @@
 
-import Link from "next/link";
 import React, {useEffect} from "react";
-
 import PageHeader from "../components/header";
-import PageFooter from "../components/footer";
 import Landing from "../components/landing";
 import HomePage from "../components/homePage";
 
@@ -37,8 +34,6 @@ return(
     </form>
   </div>
 </div>
-
-
     </div>
 </div>);
 }
