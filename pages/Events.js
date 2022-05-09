@@ -19,25 +19,6 @@ export default function Events(){
   
 return(
     <div>
-<<<<<<< HEAD
-      
-      <PageHeader isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
-      <HomePage   isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} /> 
-
-      
-      <Landing    isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
-      Hello
-
-        <div id="addFreind-content">
-
-
-
-    </div>
-</div>
-
-
-);
-=======
       <PageHeader isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
       <HomePage   isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} /> 
       <Landing    isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
@@ -59,5 +40,4 @@ return(
 
     </div>
 </div>);
->>>>>>> a8a2397ca4fbf2b3c414a85b2d856db23e2baf8a
 }

@@ -22,7 +22,7 @@ export default function Home() {
       <PageHeader isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
       <HomePage   isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
       <Landing    isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
-      <PageFooter />
+
     </div>
   );
 }

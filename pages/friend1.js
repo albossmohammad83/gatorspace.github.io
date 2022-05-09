@@ -1,5 +1,5 @@
 import React from "react";
-import moepic from "../public/team/mohammad.jpg"
+import moepic from "../public/friends/friend1.png"
 import Image from "next/image";
 import { Button } from "antd";
 import PageHeader from "../components/header";
@@ -16,21 +16,15 @@ export default function Registration() {
                   width="400%"
                   height="400%"
                 />
-                <h1>Mohammad Abdelrahman</h1>
-                <p class="title">I'm a computer science undergraduate student passionate about software development. </p>
-                <p> University</p>
+                <h1>Name:  Allen Maina</h1>
+                <h1>Major: Biology</h1> 
+                <p class="title">Hi! I'm Allen Maina. </p>
                 </div>
                 <div class="buttons-container-profile">
                 <div id="buttons">
                     <div id="button-changePassword">
-                    <Button size={"large"} href="">
-                    Change Password
-                    </Button>
-                    <br />
-                </div>
-                <div id="button-ChangeEmail">
-                    <Button size={"large"} href="">
-                        Change Email
+                    <Button size={"large"} href="/addFriends">
+                    Go back
                     </Button>
                     <br />
                 </div>

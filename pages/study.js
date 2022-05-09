@@ -1,10 +1,6 @@
 import Link from "next/link";
 import React, {useEffect} from "react";
-<<<<<<< HEAD
 import { Button } from "antd";
-=======
-
->>>>>>> a8a2397ca4fbf2b3c414a85b2d856db23e2baf8a
 import PageHeader from "../components/header";
 import PageFooter from "../components/footer";
 import Landing from "../components/landing";
@@ -41,10 +37,21 @@ return(
   </div>
 </div>
 
-<<<<<<< HEAD
 <div class= "Study-container">
     <div class = "myStudy" style={{border: " yellow solid 2px", width: "500px",height: "200px"}}>
-        My Study 
+        <h1>My Study </h1>
+        <div id="button-study1">
+                    <Link id="study1" size={"small"} href="/">
+                    csc642
+                    </Link>
+                    <br />
+                </div>
+                <div id="button-study2">
+                    <Link id="study1" size={"small"} href="/">
+                    csc415
+                    </Link>
+                    <br />
+                </div>
     </div>
     <div class = "create-group" style={{border: " yellow solid 2px", width: "500px",height: "200px"}}>
     <div id="button-create-group">
@@ -64,9 +71,4 @@ return(
 
 
 );
-=======
-
-    </div>
-</div>);
->>>>>>> a8a2397ca4fbf2b3c414a85b2d856db23e2baf8a
 }

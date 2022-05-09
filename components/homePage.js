@@ -7,7 +7,7 @@ function LoginLogout({ props }) {
         return (
             <div id="buttons">
                 <div id="button-friend">
-                    <Button size={"large"}  href="/addFrineds">
+                    <Button size={"large"}  href="/addFriends">
                         Friends
                     </Button>
                     <br />

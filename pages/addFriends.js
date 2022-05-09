@@ -43,13 +43,13 @@ return(
                     <br />
                 </div>
                 <div id="button-friend2">
-                    <Button size={"large"} href="/profile">
+                    <Button size={"large"} href="/friend1">
                     friend2
                     </Button>
                     <br />
                 </div>
                 <div id="button-friend3">
-                    <Button size={"large"} href="/profile">
+                    <Button size={"large"} href="/friend3">
                     friend3
                     </Button>
                     <br />
