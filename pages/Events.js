@@ -19,6 +19,7 @@ export default function Events(){
   
 return(
     <div>
+<<<<<<< HEAD
       
       <PageHeader isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
       <HomePage   isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} /> 
@@ -36,4 +37,27 @@ return(
 
 
 );
+=======
+      <PageHeader isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
+      <HomePage   isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} /> 
+      <Landing    isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
+      
+
+        <div id="Events-content">
+
+
+
+        <div class="topnav">
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search"></input>
+      <button type="submit">submit</button>
+    </form>
+  </div>
+</div>
+
+
+    </div>
+</div>);
+>>>>>>> a8a2397ca4fbf2b3c414a85b2d856db23e2baf8a
 }

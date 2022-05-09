@@ -6,11 +6,7 @@ import PageFooter from "../components/footer";
 import Landing from "../components/landing";
 import HomePage from "../components/homePage";
 
-<<<<<<< HEAD
-export default function CreateEvents(){
-=======
-export default function changeProfile(){
->>>>>>> a8a2397ca4fbf2b3c414a85b2d856db23e2baf8a
+export default function Help(){
     const [sStorage, setSStorage] = React.useState(null);
     const [lStorage, setLStorage] = React.useState(null);
     React.useEffect(() => {
@@ -30,11 +26,8 @@ return(
 
         <div id="addFreind-content">
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> a8a2397ca4fbf2b3c414a85b2d856db23e2baf8a
         <div class="topnav">
   <div class="search-container">
     <form action="/action_page.php">
@@ -46,12 +39,5 @@ return(
 
 
     </div>
-<<<<<<< HEAD
-</div>
-
-
-);
-=======
 </div>);
->>>>>>> a8a2397ca4fbf2b3c414a85b2d856db23e2baf8a
 }

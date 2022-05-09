@@ -1,12 +1,13 @@
 import { Button } from "antd";
 import React from "react";
+import Link from "next/link";
 
 function LoginLogout({ props }) {
     if (props.sStorage || props.lStorage) {
         return (
             <div id="buttons">
                 <div id="button-friend">
-                    <Button size={"large"} href="/addFriends">
+                    <Button size={"large"}  href="/addFrineds">
                         Friends
                     </Button>
                     <br />
@@ -18,7 +19,7 @@ function LoginLogout({ props }) {
                     <br />
                 </div>
                 <div id="button-create-event">
-                    <Button size={"large"} href="/CreateEvents">
+                    <Button size={"large"} href="/createEvents">
                         Create Events
                     </Button>
                     <br />
@@ -30,13 +31,13 @@ function LoginLogout({ props }) {
                     <br />
                 </div>
                 <div id="button-change-profile">
-                    <Button size={"large"} href="/profile">
+                    <Button size={"large"} href="/changeProfile">
                         Change Profile
                     </Button>
                     <br />
                 </div>
                 <div id="button-help">
-                    <Button size={"large"} href="/help">
+                    <Button size={"large"} href="/Help">
                         Help
                     </Button>
                     <br />
