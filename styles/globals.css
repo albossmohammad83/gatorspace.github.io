@@ -4,8 +4,9 @@
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
-  margin: auto;
+  margin: 30px auto;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.65);
 }
 
 .title {
@@ -37,48 +38,54 @@ button:hover, a:hover {
 }
 
 
-div,
-html,
+/*div,*/
+/*html,*/
 html body {
-  /* background-image: url("../public/Background.jpg"); */
+  background-image: url("../public/Background.jpg");
+  background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
 }
 
 div.buttons-container {
   position: absolute;
-  top: 35%;
-  left: 10%;
+  top: 55%;
+  left: 1%;
   width: 21%;
   height: 31%;
 }
 
 div.buttons-container-profile {
   position: absolute;
-  top: 62%;
-  left: 43%;
-  width: 50%;
+  text-align: center;
+  width: 100%;
   height: 20%;
   padding: 1ch;
 }
 
+#button-changePassword,
+#button-ChangeEmail {
+  padding: 10px;
+}
 
 Footer {
-  margin-top: 40px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+/*a {*/
+/*  color: inherit;*/
+/*  text-decoration: none;*/
+/*}*/
 
-* {
-  box-sizing: border-box;
-}
+/** {*/
+/*  box-sizing: border-box;*/
+/*}*/
 
 /* Navbar */
 
-#logo .ant-anchor-link {
+#logo {
   font-size: 24px;
   color: rgb(196, 11, 144);
   margin-right: 30px;
@@ -89,27 +96,38 @@ a {
   font-weight: bold
 }
 
-.header .ant-anchor-wrapper {
-  overflow: auto;
+.ant-anchor-wrapper {
+  /*overflow: auto;*/
   padding-right: 50vh;
+  background-color: #f0f2f5;
+  width: 100%;
+  height: auto;
+  margin-left: 0;
+  margin-right: 0;
+  z-index: 99;
+  padding: 10px;
 }
 
-.header .ant-anchor {
+.ant-layout-header {
+  padding: 0;
+}
+
+.ant-anchor {
   position: relative;
   display: flex;
   font-family: inherit;
   font-size: 20px;
+  gap:5px;
+  padding-left: 50px;
+  width: 100%;
+  height: 100%;
 }
 
-.header .ant-anchor-ink {
-  display: none;
-}
-
-.header .ant-anchor-link {
-  padding: 9px 30px;
-  line-height: 2.4;
-  position: relative;
-}
+/*.ant-anchor-link {*/
+/*  padding: 10px 30px;*/
+/*  line-height: 2.4;*/
+/*  position: relative;*/
+/*}*/
 
 .header .ant-anchor-link-title:hover {
   color: rgb(196, 11, 144);
@@ -117,9 +135,9 @@ a {
   opacity: 100%;
 }
 
+
 /* Homepage */
 
-#base,
 #about,
 #members {
   height: 100vh;
@@ -137,14 +155,17 @@ a {
 
 #Title {
   color: rgb(196, 11, 144);
-  font-family: "Roboto";
-  font-size: 70px;
+  font-family: Georgia, sans-serif;
+  font-size: 5em;
+  font-weight: 700;
+  letter-spacing: -1px;
   text-align: center;
   padding-top: 10vh;
-  
-  border: 25px solid rgb(98, 30, 181);
+  text-shadow: 0px 2px 17px #ffffff;
+  background-color: rgba(98, 30, 181, 0.5);
+  box-shadow:0px 20px 50px 10px gray;
   padding: 50px;
-  margin: 20px;
+  margin: 50px;
   
 }
 
@@ -194,38 +215,57 @@ a {
   margin-top: 500px;
 }
 
-/* Button */
-
-#base #button-left {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1vh;
-  text-align: center;
-  position: absolute;
-  left: 40%;
-  top: 20%;
-  width: 200px;
-  height: 60px;
+#base .flex-box {
+  display: flex;
+  justify-content: center;
+  gap: 8%;
+  width: 100%;
+  position: relative;
 }
-#base #button-right {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1vh;
-  text-align: center;
-  position: absolute;
-  left: 60%;
-  top: 20%;
-  width: 200px;
-  height: 60px;
+
+
+
+/* Button */
+#buttons-container{
+
+   position: absolute;
+   max-width: 800px;
+   min-width: 800px;
+   margin-left:1600px;
+   bottom: -100px;
+}
+#button-left {
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  /*padding-top: 1vh;*/
+  /*text-align: center;*/
+  
+  /* position: relative; */
+  /*left: 40%;*/
+  /*top: 20%;*/
+  width: 100px;
+  font-size: 10px;
+}
+#button-right {
+
+  /*margin-right: auto;
+  /*padding-top: 1vh;*/
+  /* text-align: center; */
+  position: relative;
+  /*left: 60%;*/
+  /*top: 20%;*/
+  width: 100px;
+  font-size: 30px;
+
 }
 
 a.ant-btn {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   background: rgb(196, 11, 144);
   border-color: rgb(8, 8, 8);
   border-radius: 5px;
-  width: 20vh;
-  height: 5vh;
+  width: 25vh;
+  height: 8vh;
   text-align: center;
 }
 
@@ -236,8 +276,8 @@ a.ant-btn:hover {
 }
 
 .ant-btn-lg > span {
-  padding-top: 0.8vh;
-  font-size: 1.5vh;
+  padding-top: 2vh;
+  font-size: 3vh;
   text-align: center;
 }
 
@@ -252,7 +292,10 @@ div .ant-carousel {
 
 #carousel-container {
   height: 60vh;
+  background-color: rgba(255, 255, 255, 0.71);
+  border-radius: 20px;
 }
+
 
 #carousel-container h1 {
   text-align: center;
@@ -268,8 +311,8 @@ div .ant-carousel {
   margin-bottom: 0vh;
 }
 
-#carousel-container div {
-  background-color: black;
+#carousel-container > * {
+  padding: 10px;
 }
 
 #carousel-container h3 {
@@ -309,9 +352,10 @@ div .ant-carousel {
 /* Login and registration */
 
 #login,
-#registration,
-#form {
+#registration
+ {
   height: 100vh;
+  text-align: center;
 }
 
 #registration h1,
@@ -320,7 +364,6 @@ div .ant-carousel {
   color: rgb(196, 11, 144);
   font-size: 4vh;
   text-align: center;
-  padding-top: 30vh;
 }
 
 
@@ -332,6 +375,7 @@ div .ant-carousel {
    border-radius: .9vh;
    height: auto;
    width: 32.5vh;
+  font-size: 18px;
  }
 
  #form .ant-btn-primary:hover{
@@ -353,15 +397,15 @@ div .ant-carousel {
 #form {
   color: rgb(196, 11, 144);;
   vertical-align: middle;
-  text-align: left;
+  /*text-align: left;*/
 }
 
 #form p{
   color: black;
   font-family: "roboto";
-  font-size: 1.25vh;
+  font-size: 2vh;
   padding-top: 1vh;
-  opacity: 50%;
+  /*opacity: 50%;*/
   text-align: center;
 }
 
@@ -369,9 +413,14 @@ div .ant-carousel {
   color: rgb(196, 11, 144);;
 }
 
-#form .ant-form .ant-form-horizontal .form {
-  vertical-align: middle;
-  margin-top: 50%;
+#form.ant-form {
+  background-color: rgba(234, 234, 234, 0.76);
+  border-radius: 25px;
+  padding: 30px;
+  width: fit-content;
+  height: available;
+  margin: auto;
+  margin-top: 20vh;
 }
 
 #form .ant-input,
@@ -386,3 +435,97 @@ div .ant-carousel {
   opacity: 100%;
 }
 
+div#button-friend > div#buttons {
+  border: red solid 5px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+div.content-container {
+  border: greenyellow solid 5px;
+  position: absolute;
+  top: 350px;
+  right:60px;
+  height: 510px;
+  max-width: 700px;
+  min-width: 700px;
+}
+
+div#addFreind-content{
+  left: 40%;
+  border: greenyellow solid 5px;
+  margin-left: 20%;
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: left;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: left;
+  padding: 1px;
+  margin-top: -38px;
+  margin-left: 200px;
+  size: 40%;
+  background: rgb(240, 8, 193);
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 50%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}

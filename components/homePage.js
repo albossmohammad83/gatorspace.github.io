@@ -1,42 +1,43 @@
 import { Button } from "antd";
 import React from "react";
+import Link from "next/link";
 
 function LoginLogout({ props }) {
     if (props.sStorage || props.lStorage) {
         return (
             <div id="buttons">
                 <div id="button-friend">
-                    <Button size={"large"} href="/">
+                    <Button size={"large"}  href="/addFrined">
                         Friends
                     </Button>
                     <br />
                 </div>
                 <div id="button-event">
-                    <Button size={"large"} href="/">
+                    <Button size={"large"} href="/Events">
                         Events
                     </Button>
                     <br />
                 </div>
                 <div id="button-create-event">
-                    <Button size={"large"} href="/">
+                    <Button size={"large"} href="/createEvents">
                         Create Events
                     </Button>
                     <br />
                 </div>
                 <div id="button-study">
-                    <Button size={"large"} href="/">
+                    <Button size={"large"} href="/study">
                         Study
                     </Button>
                     <br />
                 </div>
                 <div id="button-change-profile">
-                    <Button size={"large"} href="/">
+                    <Button size={"large"} href="/changeProfile">
                         Change Profile
                     </Button>
                     <br />
                 </div>
                 <div id="button-help">
-                    <Button size={"large"} href="/">
+                    <Button size={"large"} href="/Help">
                         Help
                     </Button>
                     <br />
