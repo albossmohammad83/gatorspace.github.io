@@ -32,13 +32,13 @@ return(
   <div class="search-container">
     <form action="/action_page.php">
       <input type="text" placeholder="Search.." name="search"></input>
-      <button type="submit">submit</button>
+      <button style={{fontWeight: "bold",}} type="submit">Search</button>
     </form>
   </div>
 </div>
 
 <div class= "Study-container">
-    <div class = "myStudy" style={{border: " yellow solid 2px", width: "500px",height: "200px"}}>
+    <div class = "myStudy" style={{ width: "500px",height: "200px"}}>
         <h1>My Study </h1>
         <div id="button-study1">
                     <Link id="study1" size={"small"} href="/">
@@ -53,7 +53,7 @@ return(
                     <br />
                 </div>
     </div>
-    <div class = "create-group" style={{border: " yellow solid 2px", width: "500px",height: "200px"}}>
+    <div class = "create-group" style={{ width: "500px",height: "200px"}}>
     <div id="button-create-group">
                     <Button size={"large"} href="/">
                     create group

@@ -31,26 +31,29 @@ return(
   <div class="search-container">
     <form action="/action_page.php">
       <input type="text" placeholder="Search.." name="search"></input>
-      <button type="submit">Submit</button>
+      <button type="submit">Search</button>
+      <br></br>
+      <br></br>
     </form>
   </div>
 </div>
 <div class = "friend list">
+  <h2> My Friends</h2>
 <div id="button-friend1">
                     <Button size={"large"} href="/profile">
-                    friend1
+                    mohammad
                     </Button>
                     <br />
                 </div>
                 <div id="button-friend2">
                     <Button size={"large"} href="/friend1">
-                    friend2
+                    Allen
                     </Button>
                     <br />
                 </div>
                 <div id="button-friend3">
                     <Button size={"large"} href="/friend3">
-                    friend3
+                    kimberly
                     </Button>
                     <br />
                 </div>

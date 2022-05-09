@@ -27,7 +27,7 @@ const bios = [
     memberName: "SJ KIM",
     memberBio:
     "Back-end + github master",
-      contactinfo: "sjk4560@gmail.com",
+      contactinfo: "sjk40@gmail.com",
   },
   {
     key: "daisy",
@@ -77,7 +77,8 @@ return(
         {bios.map((bios) => {
           return (
             <div id="carousel-container" key={bios.key}>
-              <h1>{bios.memberName}</h1>
+              
+              <h1> Name:   {bios.memberName}</h1>
               <h3>
                 <Image
                   src={`/team/${bios.key}.jpg`}
@@ -87,6 +88,8 @@ return(
                 />
               </h3>
               <p>{bios.memberBio}</p>
+
+              <h2 style={{fontWeight: "bold",}}>Contact info:</h2>
               <h1>{bios.contactinfo}</h1>
             </div>
           );
