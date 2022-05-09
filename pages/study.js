@@ -1,10 +1,6 @@
 import Link from "next/link";
 import React, {useEffect} from "react";
-<<<<<<< HEAD
 import { Button } from "antd";
-=======
-
->>>>>>> a8a2397ca4fbf2b3c414a85b2d856db23e2baf8a
 import PageHeader from "../components/header";
 import PageFooter from "../components/footer";
 import Landing from "../components/landing";
@@ -41,7 +37,6 @@ return(
   </div>
 </div>
 
-<<<<<<< HEAD
 <div class= "Study-container">
     <div class = "myStudy" style={{border: " yellow solid 2px", width: "500px",height: "200px"}}>
         My Study 
@@ -64,9 +59,4 @@ return(
 
 
 );
-=======
-
-    </div>
-</div>);
->>>>>>> a8a2397ca4fbf2b3c414a85b2d856db23e2baf8a
 }
