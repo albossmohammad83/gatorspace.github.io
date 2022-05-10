@@ -72,9 +72,9 @@ return(
 
         <div class="topnav">
   <div class="search-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search"></input>
-      <button type="submit">submit</button>
+    <form id="nav-form" action="/action_page.php">
+      <input id="nav-search-input" type="text" placeholder="Search.." name="search"></input>
+      <button id="nav-search-button" type="submit">submit</button>
     </form>
   </div>
 </div>
