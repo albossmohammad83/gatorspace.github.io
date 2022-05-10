@@ -229,12 +229,15 @@ Footer {
 
 /* Button */
 #buttons-container{
-
    position: absolute;
    max-width: 800px;
    min-width: 800px;
-   margin-left:1600px;
-   bottom: -100px;
+   top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #button-left {
   /*margin-left: auto;*/
