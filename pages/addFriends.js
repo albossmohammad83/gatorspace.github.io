@@ -31,8 +31,8 @@ export default function addFriends() {
         <div class="topnav">
           <div class="search-container">
             <form id="nav-form" action="/action_page.php">
-              <input type="text" placeholder="Search.." name="search" id="nav-search-input"></input>
-              <button type="submit" id="nav-search-button">Submit</button>
+              <input id="nav-search-input" type="text" placeholder="Search.." name="search"></input>
+              <button id="nav-search-button" type="submit">Submit</button>
             </form>
           </div>
         </div>
