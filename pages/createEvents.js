@@ -28,9 +28,9 @@ return(
 
         <div class="topnav">
   <div class="search-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search"></input>
-      <button type="submit">Submit</button>
+    <form id="nav-form" action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search" id="nav-search-input"></input>
+      <button type="submit" id="nav-search-button">Submit</button>
     </form>
   </div>
 </div>

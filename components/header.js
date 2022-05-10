@@ -48,11 +48,6 @@ export default function PageHeader({ isLoggedIn }) {
                 <Link href="/" title="Gator Space" />
               </Anchor>
             </div>
-            <div>
-              <Anchor>
-                <Link href="/members" title="About Us" />
-              </Anchor>
-            </div>
             <LoginLogout props={isLoggedIn} />
           </Anchor>
         </div>

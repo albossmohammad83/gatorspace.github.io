@@ -4,9 +4,11 @@
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
-  margin: 30px auto;
+  margin: auto;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.65);
+  /*border: blue 5px solid;*/
+  padding: 5px;
 }
 
 .title {
@@ -49,7 +51,7 @@ html body {
 
 div.buttons-container {
   position: absolute;
-  top: 55%;
+  top: 40%;
   left: 1%;
   width: 21%;
   height: 31%;
@@ -264,7 +266,7 @@ a.ant-btn {
   background: rgb(196, 11, 144);
   border-color: rgb(8, 8, 8);
   border-radius: 5px;
-  width: 25vh;
+  width: 30vh;
   height: 8vh;
   text-align: center;
 }
@@ -435,9 +437,47 @@ div .ant-carousel {
   opacity: 100%;
 }
 
+div#button-friend1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  /*border: 5px solid blueviolet;*/
+  padding: 10px;
+  width: auto;
+  right: 1%;
+}
+
+
+div#button-friend1 > #form {
+  margin: 80px;
+}
+
+#nav-form {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-left: 10px;
+}
+
+#nav-search-input {
+  /*height: 60px;*/
+  /*flex-grow: 3;*/
+  width: 500px;
+  margin: 0;
+  padding-left: 10px;
+}
+#nav-search-button{
+  /*flex-grow: 1;*/
+  width: 100px;
+  margin: 0;
+  padding: 0;
+}
+
 div#button-friend > div#buttons {
-  
-  width: fit-content;
+  /*border: red solid 5px;*/
+  width: 300px;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -446,19 +486,18 @@ div#button-friend > div#buttons {
 
 div.content-container {
   /* border: greenyellow solid 5px; */
-  position: absolute;
-  top: 350px;
-  right:60px;
-  height: 510px;
-  max-width: 700px;
-  min-width: 700px;
+  /*position: absolute;*/
+  /*top: 350px;*/
+  /*right:60px;*/
+  /*height: 510px;*/
+  /*max-width: 700px;*/
+  /*min-width: 700px;*/
 }
 
 div#addFreind-content{
-  left: 40%;
-  /* border: greenyellow solid 5px; */
-  margin-left: 20%;
-
+  right: 1%;
+  /*border: greenyellow solid 5px;*/
+  margin-left: 25%;
 }
 
 .topnav {
@@ -488,6 +527,7 @@ div#addFreind-content{
 
 .topnav .search-container {
   float: left;
+  width: 600px;
 }
 
 .topnav input[type=text] {
@@ -528,3 +568,11 @@ div#addFreind-content{
     border: 1px solid #ccc;  
   }
 }
+
+.friend-list {
+
+
+
+
+}
+
