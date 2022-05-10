@@ -1,4 +1,6 @@
-import React from "react";
+import Link from "next/link";
+import React, {useEffect} from "react";
+
 import PageHeader from "../components/header";
 import Landing from "../components/landing";
 import HomePage from "../components/homePage";
@@ -20,8 +22,11 @@ return(
       <PageHeader isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
       <HomePage   isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} /> 
       <Landing    isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
-      <div id="addFreind-content">
-<div class="topnav">
+      
+
+        <div id="addFreind-content">
+
+        <div class="topnav">
   <div class="search-container">
     <form id="nav-form" action="/action_page.php">
       <input type="text" placeholder="Search.." name="search" id="nav-search-input"></input>
@@ -34,7 +39,8 @@ return(
     
  <CreateEventForm />
 
-  </div>
+
+    </div>
 </div>
 </div>
 </div>
