@@ -35,7 +35,15 @@ const bios = [
     memberBio:
       "Back-end + scrum master",
       contactinfo: "daisy43@gmail.com",
-    }
+    },
+  {
+    key: "chi",
+    memberName: "Chi Tran",
+    memberBio:
+      "I'm a Computer Science undergraduate student at SFSU." +
+      "This is my favorite time of the year: the end of the school year.",
+    contactinfo: "ttranpham@mail.sfsu.edu",
+  }
 
 ];
 

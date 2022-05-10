@@ -32,6 +32,12 @@ const bios = [
       "I'm a computer engineering undergraduate student." +
       "I will be graduating this spring 22' and excited to pursue a career within my field.",
 
+    key: "chi",
+    memberName: "Chi Tran",
+    memberBio:
+      "I'm a Computer Science undergraduate student at SFSU." +
+      "This is my favorite time of the year: the end of the school year.",
+
   },
 
 ];

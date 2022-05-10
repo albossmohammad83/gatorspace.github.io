@@ -26,12 +26,14 @@ return(
       <Landing    isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
 
         <div id="addFreind-content">
-
-        <Event1/>
-        <Event2/>
-        <Event3/>
-        <Event4/>
-
+          <div class="friend-list">
+            <div id="button-friend1">
+                <Event1/>
+                <Event2/>
+                <Event3/>
+                <Event4/>
+            </div>
+        </div>
     </div>
 </div>
 );
