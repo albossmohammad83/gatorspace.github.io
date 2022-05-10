@@ -1,10 +1,8 @@
-import Link from "next/link";
-import React, {useEffect} from "react";
-
+import React from "react";
 import PageHeader from "../components/header";
-import PageFooter from "../components/footer";
 import Landing from "../components/landing";
 import HomePage from "../components/homePage";
+import CreateStudyForm from "./createStudyForm";
 
 export default function CreateEvents(){
     const [sStorage, setSStorage] = React.useState(null);
@@ -22,23 +20,23 @@ return(
       <PageHeader isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
       <HomePage   isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} /> 
       <Landing    isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
-      
-
-        <div id="addFreind-content">
-
-        <div class="topnav">
+      <div id="addFreind-content">
+<div class="topnav">
   <div class="search-container">
     <form action="/action_page.php">
       <input type="text" placeholder="Search.." name="search"></input>
-      <button type="submit">submit</button>
+      <button type="submit">Submit</button>
     </form>
   </div>
 </div>
+<div class="friend list">
+  <div id="button-friend1">
+    
+ <CreateStudyForm />
 
-
-    </div>
+  </div>
 </div>
-
-
+</div>
+</div>
 );
 }

@@ -42,8 +42,6 @@ export default function addFriends() {
             <Profile2 />
             <Profile3 />
             <Profile4 />
-
-
           </div>
         </div>
       </div>
