@@ -26,11 +26,23 @@ return(
       <Landing    isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
 
         <div id="addFreind-content">
+        <div class="topnav">
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search"></input>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+          <div class="friend-list">
+            <div id="button-friend1">
 
-        <Group1/>
-        <Group2/>
-        <Group3/>
-        <Group4/>
+                <Group1/>
+                <Group2/>
+                <Group3/>
+                <Group4/>
+            </div>
+          </div>
 
     </div>
 </div>
