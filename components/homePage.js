@@ -8,7 +8,7 @@ function LoginLogout({ props }) {
             <div id="buttons">
                 <div id="button-friend">
                     <Button size={"large"}  href="/addFriends">
-                        Friends
+                    Friend suggestion
                     </Button>
                     <br />
                 </div>
@@ -25,14 +25,14 @@ function LoginLogout({ props }) {
                     <br />
                 </div>
                 <div id="button-study">
-                    <Button size={"large"} href="/study">
-                        Study
+                    <Button size={"large"} href="/Study">
+                        Study groups
                     </Button>
                     <br />
                 </div>
-                <div id="button-change-profile">
-                    <Button size={"large"} href="/changeProfile">
-                        Change Profile
+                <div id="button-create-study">
+                    <Button size={"large"} href="/createStudy">
+                        Create Study group
                     </Button>
                     <br />
                 </div>

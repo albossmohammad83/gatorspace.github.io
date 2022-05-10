@@ -2,9 +2,9 @@ import Link from "next/link";
 import React, {useEffect} from "react";
 
 import PageHeader from "../components/header";
-import PageFooter from "../components/footer";
 import Landing from "../components/landing";
 import HomePage from "../components/homePage";
+import CreateEventForm from "./createEventForm";
 
 export default function CreateEvents(){
     const [sStorage, setSStorage] = React.useState(null);
@@ -30,15 +30,19 @@ return(
   <div class="search-container">
     <form action="/action_page.php">
       <input type="text" placeholder="Search.." name="search"></input>
-      <button type="submit">submit</button>
+      <button type="submit">Submit</button>
     </form>
   </div>
 </div>
+<div class="friend list">
+  <div id="button-friend1">
+    
+ <CreateEventForm />
 
 
     </div>
 </div>
-
-
+</div>
+</div>
 );
 }

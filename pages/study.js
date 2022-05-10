@@ -2,11 +2,14 @@ import Link from "next/link";
 import React, {useEffect} from "react";
 import { Button } from "antd";
 import PageHeader from "../components/header";
-import PageFooter from "../components/footer";
 import Landing from "../components/landing";
 import HomePage from "../components/homePage";
+import Group1 from "../pages/group1"
+import Group2 from "../pages/group2"
+import Group3 from "../pages/group3"
+import Group4 from "../pages/group4"
 
-export default function study(){
+export default function Events(){
     const [sStorage, setSStorage] = React.useState(null);
     const [lStorage, setLStorage] = React.useState(null);
     React.useEffect(() => {
@@ -19,13 +22,17 @@ export default function study(){
   
 return(
     <div>
+      
       <PageHeader isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
       <HomePage   isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} /> 
       <Landing    isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
-      
 
         <div id="addFreind-content">
 
+        <Group1/>
+        <Group2/>
+        <Group3/>
+        <Group4/>
 
 
         <div class="topnav">
@@ -61,14 +68,8 @@ return(
                     <br />
                 </div>
     </div>
-
-
 </div>
-
-
-    </div>
 </div>
-
-
+</div>
 );
 }

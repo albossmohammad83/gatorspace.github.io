@@ -2,12 +2,9 @@ import React from "react";
 import PageHeader from "../components/header";
 import Landing from "../components/landing";
 import HomePage from "../components/homePage";
-import Event1 from "../pages/event1"
-import Event2 from "../pages/event2"
-import Event3 from "../pages/event3"
-import Event4 from "../pages/event4"
+import CreateStudyForm from "./createStudyForm";
 
-export default function Events(){
+export default function CreateEvents(){
     const [sStorage, setSStorage] = React.useState(null);
     const [lStorage, setLStorage] = React.useState(null);
     React.useEffect(() => {
@@ -20,19 +17,26 @@ export default function Events(){
   
 return(
     <div>
-      
       <PageHeader isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
       <HomePage   isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} /> 
       <Landing    isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
+      <div id="addFreind-content">
+<div class="topnav">
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search"></input>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+<div class="friend list">
+  <div id="button-friend1">
+    
+ <CreateStudyForm />
 
-        <div id="addFreind-content">
-
-        <Event1/>
-        <Event2/>
-        <Event3/>
-        <Event4/>
-
-    </div>
+  </div>
+</div>
+</div>
 </div>
 );
 }

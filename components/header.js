@@ -22,7 +22,7 @@ function LoginLogout({ props }) {
           </div>
           <div>
             <Anchor >
-              <Link href="/profile" title="Profile" />
+              <Link href="/profile0" title="Profile" />
             </Anchor>
           </div>
         </>
