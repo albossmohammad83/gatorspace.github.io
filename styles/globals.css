@@ -436,7 +436,7 @@ div .ant-carousel {
 }
 
 div#button-friend > div#buttons {
-  border: red solid 5px;
+  
   width: fit-content;
   height: fit-content;
   display: flex;

@@ -9,7 +9,7 @@ import Group2 from "../pages/group2"
 import Group3 from "../pages/group3"
 import Group4 from "../pages/group4"
 
-export default function Events(){
+export default function study(){
     const [sStorage, setSStorage] = React.useState(null);
     const [lStorage, setLStorage] = React.useState(null);
     React.useEffect(() => {
@@ -22,19 +22,12 @@ export default function Events(){
   
 return(
     <div>
-      
+
       <PageHeader isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
       <HomePage   isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} /> 
       <Landing    isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
 
         <div id="addFreind-content">
-
-        <Group1/>
-        <Group2/>
-        <Group3/>
-        <Group4/>
-
-
         <div class="topnav">
   <div class="search-container">
     <form action="/action_page.php">
@@ -43,32 +36,16 @@ return(
     </form>
   </div>
 </div>
+        <Group1/>
+        <Group2/>
+        <Group3/>
+        <Group4/>
 
-<div class= "Study-container">
-    <div class = "myStudy" style={{ width: "500px",height: "200px"}}>
-        <h1>My Study </h1>
-        <div id="button-study1">
-                    <Link id="study1" size={"small"} href="/">
-                    csc642
-                    </Link>
-                    <br />
-                </div>
-                <div id="button-study2">
-                    <Link id="study1" size={"small"} href="/">
-                    csc415
-                    </Link>
-                    <br />
-                </div>
-    </div>
-    <div class = "create-group" style={{ width: "500px",height: "200px"}}>
-    <div id="button-create-group">
-                    <Button size={"large"} href="/">
-                    create group
-                    </Button>
-                    <br />
-                </div>
-    </div>
-</div>
+
+      
+
+
+
 </div>
 </div>
 );
