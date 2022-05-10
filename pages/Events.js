@@ -34,6 +34,7 @@ return(
     </form>
   </div>
 </div>
+
           <div class="friend-list">
             <div id="button-friend1">
                 <Event1/>

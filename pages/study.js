@@ -26,6 +26,7 @@ return(
       <Landing    isLoggedIn={{sStorage: sStorage, lStorage: lStorage}} />
 
         <div id="addFreind-content">
+
         <div class="topnav">
   <div class="search-container">
     <form id="nav-form" action="/action_page.php">

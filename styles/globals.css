@@ -448,6 +448,7 @@ div#button-friend1 {
   right: 1%;
 }
 
+
 div#button-friend1 > #form {
   margin: 80px;
 }
@@ -465,7 +466,6 @@ div#button-friend1 > #form {
   /*flex-grow: 3;*/
   width: 500px;
   margin: 0;
-  padding: 0;
   padding-left: 10px;
 }
 #nav-search-button{
