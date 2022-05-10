@@ -19,7 +19,7 @@ function LoginLogout({ props }) {
                     <br />
                 </div>
                 <div id="button-create-event">
-                    <Button size={"large"} href="/CreateEvents">
+                    <Button size={"large"} href="/createEvents">
                         Create Events
                     </Button>
                     <br />
